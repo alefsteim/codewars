@@ -1,29 +1,16 @@
-import { dirReduc } from "./cw-redundant-directions/remove-redundant-directions";
+import { determinant } from "./cw-matrix-determinant/matrixDeterminant";
 
-console.log("________");
- console.log(   dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"])
-);
-console.log(dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH"]));
+// console.log(
+//   determinant([
+//     [1, 3],
+//     [2, 5],
+//   ])
+// );
+
 console.log(
-  dirReduc([
-    "EAST",
-    "SOUTH",
-    "NORTH",
-    "NORTH",
-    "NORTH",
-    "NORTH",
-    "WEST",
-    "WEST",
-    "SOUTH",
-    "EAST",
-    "WEST",
-    "NORTH",
-    "SOUTH",
-    "SOUTH",
-    "NORTH",
-    "WEST",
-    "EAST",
-    "EAST",
-    "EAST",
+  determinant([
+    [2, 5, 3],
+    [1, -2, -1],
+    [1, 3, 4],
   ])
 );
